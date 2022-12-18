@@ -23,7 +23,7 @@ export class PrismaNotificationsRepositories implements NotificationsRepository 
   async findManyByRecipientId(recipientId: string): Promise<Notification[]> {
     const notifications = await this.prismaService.notification.findMany({
       where: {
-        id: recipientId,
+        recipientId: recipientId,
       },
     });
 

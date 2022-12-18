@@ -31,10 +31,10 @@ export class NotificationsController {
       recipientId,
     });
 
-    return count;
+    return { count };
   }
 
-  @Get('count/from/:recipientId')
+  @Get('from/:recipientId')
   async getFromRecipient(@Param('recipientId') recipientId: string) {
     const { notifications } = await this.getRecipientNotifications.execute({
       recipientId,
