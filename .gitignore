@@ -39,6 +39,7 @@ build/Release
 
 # Dependency directories
 notifications-service/node_modules
+notifications-service/dist
 jspm_packages/
 
 # TypeScript v1 declaration files
